@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --black: #434343;
+  --blue: #2F80ED;
+  --white: #FFFFFF;
+  --grey: #757575;
+  --hover: #C8C5BB;
+}
+
+$browser-fontsize: 16;
+$container-padding: 30px;
+$container-maxwidth: 1209px;
+
+/* Media */
+$laptop-lg: 1400px;
+$laptop: 1140px;
+$tablet: 992px;
+$mobile: 769px;
+$mobile-sm: 576px;
+$mobile-xs: 446px;
+$mobile-min: 375px;

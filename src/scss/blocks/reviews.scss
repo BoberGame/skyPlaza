@@ -1,0 +1,139 @@
+.reviews {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    grid-gap: rem(30) rem(20);
+  }
+
+  &__item {
+    padding: rem(25) rem(30) rem(30) rem(25);
+
+    background-color: var(--white);
+    border-radius: rem(20);
+    overflow: hidden;
+    box-shadow: 0px 12px 53px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header {
+    margin-bottom: rem(20);
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    padding: em(7) em(10);
+
+    background-color: #E0E0E0;
+    border-radius: em(53);
+  }
+
+  &__icon {
+    width: rem(28);
+    height: rem(28);
+    margin-right: rem(10);
+
+    @media (max-width: $tablet) {
+      width: rem(20);
+      height: rem(20);
+    }
+  }
+
+  &__score {
+    letter-spacing: 0.22em;
+    color: var(--grey);
+    line-height: 1.25;
+    @include adaptiv-value(font-size, 21, 14, 0);
+  }
+
+  &__body {
+    margin-bottom: rem(30);
+  }
+
+  &__text {
+    line-height: 1.3;
+    color: var(--grey);
+    font-weight: 400;
+    @include adaptiv-value(font-size, 18, 14, 0);
+
+    &.hide {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &__more {
+    margin-top: rem(10);
+    padding: 0;
+
+    font-size: rem(19);
+    color: var(--blue);
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: darken(#2F80ED, 20%);
+      }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(17);
+    }
+
+    .show & {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    column-gap: rem(15);
+    min-height: rem(58);
+  }
+
+  &__photo {
+    width: rem(58);
+    height: rem(58);
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__profile {
+    letter-spacing: 0.02em;
+    color: var(--grey);
+    line-height: 1.25;
+  }
+
+  &__name {
+    margin-bottom: rem(4);
+
+    @include adaptiv-value(font-size, 24, 18, 0)
+  }
+
+  &__date {
+    font-size: rem(18);
+    font-weight: 400;
+
+    @media (max-width: $mobile) {
+      font-size: rem(14);
+    }
+  }
+
+  &__btn {
+    margin-top: rem(40);
+    text-align: center;
+  }
+}

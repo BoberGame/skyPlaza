@@ -1,0 +1,42 @@
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(16);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  main {
+    overflow: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img,
+button,
+svg {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+p {
+  margin-bottom: rem(20);
+}

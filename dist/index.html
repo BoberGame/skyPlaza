@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- Yandex Map API -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2ee2f057-e1a3-4477-9a6f-9614f69411c7&lang=ru_RU">
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>SkyPlazaYalta</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="menu-burger">
+                <span></span>
+            </div>
+            <div class="menu-body">
+                <div class="header__logo">
+                    <div class="header__subtitle">Апарт-отель</div>
+                    <h2 class="header__title">«SkyPlazaYalta»</h2>
+                    <address>
+                        <div class="header__address">г. Ялта, ул. Дражинского 48В</div>
+                    </address>
+                </div>
+                <div class="header__socials header__socials_burger socials">
+                    <a class="socials__item" href="#" target="_blank">
+                        <img alt="" class="socials__icon" src="img/icons/wa.svg">
+                    </a>
+                    <a class="socials__item" href="#" target="_blank">
+                        <img alt="" class="socials__icon" src="img/icons/tg.svg">
+                    </a>
+                    <a class="socials__item" href="#" target="_blank">
+                        <img alt="" class="socials__icon" src="img/icons/tel.svg">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__menu" data-da=".menu-body,768,1">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" data-scroll="about">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" data-scroll="rooms">Апартаменты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" data-scroll="address">Как добраться</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" data-scroll="reviews">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#" data-scroll="contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__socials socials">
+                <a class="socials__item" href="#" target="_blank">
+                    <img alt="" class="socials__icon" src="img/icons/wa.svg">
+                </a>
+                <a class="socials__item" href="#" target="_blank">
+                    <img alt="" class="socials__icon" src="img/icons/tg.svg">
+                </a>
+                <a class="socials__item" href="#" target="_blank">
+                    <img alt="" class="socials__icon" src="img/icons/tel.svg">
+                </a>
+            </div>
+
+            <a class="header__phone" href="tel:+79504777365">+7 (950) 477-73-65</a>
+        </div>
+    </div><!-- /.header__container -->
+</header><!-- /.header -->
+    <main class="page">
+
+
+        <!-- Intro -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro__wrapper">
+                    <div class="swiper swiper-intro">
+                        <div class="swiper-wrapper intro__swiper__wrapper">
+                            <div class="swiper-slide intro__slide">
+                                <div class="intro__info">
+                                    <div class="header__subtitle header__subtitle_intro">Апарт-отель</div>
+                                    <h2 class="header__title header__title_intro">«SkyPlazaYalta»</h2>
+                                    <address>
+                                        <div class="header__address header__address_intro">г. Ялта, ул. Дражинского 48В</div>
+                                    </address>
+                                </div>
+                                <div class="intro__img">
+                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" src="img/1.jpg"></picture>
+                                </div>
+                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                            </div>
+                            <div class="swiper-slide intro__slide">
+                                <div class="intro__info">
+                                    <div class="header__subtitle header__subtitle_intro">Апарт-отель</div>
+                                    <h2 class="header__title header__title_intro">«SkyPlazaYalta»</h2>
+                                    <address>
+                                        <div class="header__address header__address_intro">г. Ялта, ул. Дражинского 48В</div>
+                                    </address>
+                                </div>
+                                <div class="intro__img">
+                                    <picture><source srcset="img/2.webp" type="image/webp"><img alt="" src="img/2.jpg"></picture>
+                                </div>
+                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                            </div>
+                            <div class="swiper-slide intro__slide">
+                                <div class="intro__info">
+                                    <div class="header__subtitle header__subtitle_intro">Апарт-отель</div>
+                                    <h2 class="header__title header__title_intro">«SkyPlazaYalta»</h2>
+                                    <address>
+                                        <div class="header__address header__address_intro">г. Ялта, ул. Дражинского 48В</div>
+                                    </address>
+                                </div>
+                                <div class="intro__img">
+                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" class="" src="img/1.jpg"></picture>
+                                </div>
+                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                            </div>
+                        </div>
+                    </div><!-- /.swiper -->
+                </div><!-- /.intro__wrapper -->
+            </div><!-- /.container -->
+        </section><!-- /.intro -->
+
+
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__row about__row_main">
+                        <div class="about__item about__item_main " data-da=".about__wrapper,768,0">
+                            <h2 class="section__title">О нас</h2>
+                            <div class="about__text">
+                                <p>Апарт-отель «SkyPlazaYalta» расположен на закрытой территории в шаговой доступности от моря и центра Ялты. В нашем отеле есть всё для вашего комфортабельного отдыха.</p>
+                                <p>К вашим услугам: уникальные по своему дизайну и комфорту, просторные номера с видом на море и город. Детские площадки, охраняемая территория и подземный паркинг.</p>
+                                <p>Самые разнообразные услуги от фотосессии до круиза по морю на комфортабельной яхте, разнообразят и украсят ваш отпуск.</p>
+                            </div>
+                        </div>
+                        <picture><source srcset="img/about/1.webp" type="image/webp"><img alt="" class="about__img about__img_lg img" src="img/about/1.jpg"></picture>
+                    </div>
+                    <div class="about__row">
+                        <picture><source srcset="img/about/2.webp" type="image/webp"><img alt="" class="about__img img" src="img/about/2.jpg"></picture>
+                        <picture><source srcset="img/about/3.webp" type="image/webp"><img alt="" class="about__img img" src="img/about/3.jpg"></picture>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- /.about -->
+
+
+
+        <!-- Rooms -->
+        <section class="rooms section" id="rooms">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Номерной фонд</h2>
+                </div>
+                <div class="rooms__wrapper">
+                    <div class="swiper swiper-rooms">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rooms__item">
+                                    <div class="rooms__preview">
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                    </div>
+                                    <div class="rooms__info">
+                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__footer">
+                                            <div class="rooms__price"><b>от 3200 &#8381;</b> <span>cутки</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rooms__item">
+                                    <div class="rooms__preview">
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                    </div>
+                                    <div class="rooms__info">
+                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__footer">
+                                            <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rooms__item">
+                                    <div class="rooms__preview">
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                    </div>
+                                    <div class="rooms__info">
+                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__footer">
+                                            <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rooms__item">
+                                    <div class="rooms__preview">
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                    </div>
+                                    <div class="rooms__info">
+                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__footer">
+                                            <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rooms__item">
+                                    <div class="rooms__preview">
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                    </div>
+                                    <div class="rooms__info">
+                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__footer">
+                                            <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.rooms -->
+
+
+
+        <!-- Features -->
+        <section class="section features">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Ваш отдых - наша ответсвенность</h2>
+        </div>
+        <div class="features__wrapper">
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/1.jpg"></picture>
+                </div>
+                <div class="features__text">Трансфер</div>
+            </div>
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/2.jpg"></picture>
+                </div>
+                <div class="features__text">Скоростной интернет</div>
+            </div>
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/3.jpg"></picture>
+                </div>
+                <div class="features__text">Домашняя кухня</div>
+            </div>
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/1.jpg"></picture>
+                </div>
+                <div class="features__text">Бесплатная парковка</div>
+            </div>
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/2.jpg"></picture>
+                </div>
+                <div class="features__text">Скоростной интернет</div>
+            </div>
+            <div class="features__item">
+                <div class="features__left">
+                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/3.jpg"></picture>
+                </div>
+                <div class="features__text">Домашняя кухня</div>
+            </div>
+        </div><!-- /.features__wrapper -->
+    </div><!-- /.container -->
+</section><!-- /.features -->
+
+
+
+        <!-- Gallery -->
+        <section class="section gallery">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Отель расположен в самой живописной локации Ялты</h2>
+                </div>
+                <div class="gallery__wrapper">
+                    <div class="gallery__row">
+                        <div class="gallery__item">
+                            <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/1.jpg"></picture>
+                        </div>
+                        <div class="gallery__item">
+                            <picture><source srcset="img/gallery/2.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/2.jpg"></picture>
+                        </div>
+                    </div>
+                    <div class="gallery__row">
+                        <div class="gallery__item">
+                            <picture><source srcset="img/gallery/3.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/3.jpg"></picture>
+                        </div>
+                        <div class="gallery__item">
+                            <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/4.jpg"></picture>
+                        </div>
+                    </div>
+                    <div class="gallery__footer">
+                        <button class="gallery__btn btn btn_sm" type="button" data-modal="#galleryPopup">Смотреть больше фото</button>
+                    </div>
+                </div><!-- /.gallery__wrapper -->
+            </div><!-- /.container -->
+        </section><!-- /.gallery -->
+
+
+
+        <!-- Video Block -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Посмотрите видео-презентацию</h2>
+                </div>
+                <div class="play__wrapper">
+                    <video class="play__videowrapper play__video" controls poster="img/2.jpg" data-video>
+                        <source src="files/presentation/video.webm" type="video/webm">
+                        <source src="files/presentation/video.mp4" type="video/mp4">
+                    </video>
+                    <button class="play__btn" type="button" data-play>
+                        <img alt="" class="play__icon" src="img/icons/play.svg">
+                    </button>
+                    <span class="play__blur"></span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Blog -->
+        <section class="section blog">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <div class="blog__item">
+                        <div class="blog__info">
+                            <div class="blog__header">
+                                <h3 class="section__title">Как отдохнуть?</h3>
+                            </div>
+                            <div class="blog__text">
+                                <p>Усадьба «Миневичи» создана для тех, кто устал от шума и загазованного воздуха города и желает отдохнуть в красивом уголке природы, не расставаясь с привычным комфортом.</p>
+                                <p>В усадьбе хорошо и спокойно проводить время с семьей, друзьями и коллегами. Первозданная природа, отличный сервис, повышенный комфорт, гостеприимная атмосфера — всё это делает отдых в этом месте по-настоящему качественным.</p>
+                            </div>
+                        </div>
+                        <div class="blog__preview">
+                            <picture><source srcset="img/4.webp" type="image/webp"><img alt="" class="img" src="img/4.jpg"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Reviews -->
+        <section class="section reviews" id="reviews">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Клиенты о нас</h2>
+        </div>
+        <div class="reviews__inner">
+            <div class="reviews__item">
+                <div class="reviews__header">
+                    <div class="reviews__rating">
+                        <img alt="" class="reviews__icon" src="img/icons/google.svg">
+                        <span class="reviews__score">5/5</span>
+                    </div>
+                </div>
+                <div class="reviews__body">
+                    <div class="reviews__text">
+                        Были в апреле, ловили воблу, всё очень понравилось, место, персонал, удобства, стояли в палатке, решили приехать сюда в конце сентября. Елена и Сергей из Нижегородской области, отдельное спасибо хозяйке Юле.
+                    </div>
+                </div>
+                <div class="reviews__author">
+                    <div class="reviews__profile">
+                        <div class="reviews__name">Никита Толмачев</div>
+                        <time class="reviews__date" datetime="2021-09-28">28 сентября 2021</time>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__header">
+                    <div class="reviews__rating">
+                        <img alt="" class="reviews__icon" src="img/icons/yandex.svg">
+                        <span class="reviews__score">4/5</span>
+                    </div>
+                </div>
+                <div class="reviews__body">
+                    <div class="reviews__text">
+                        Были в апреле, ловили воблу, всё очень понравилось, место, персонал, удобства, стояли в палатке, решили приехать сюда в конце сентября. Елена и Сергей из Нижегородской области, отдельное спасибо хозяйке Юле.
+                    </div>
+                </div>
+                <div class="reviews__author">
+                    <div class="reviews__photo">
+                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="img/reviews-photo.png"></picture>
+                    </div>
+                    <div class="reviews__profile">
+                        <div class="reviews__name">Никита Толмачев</div>
+                        <time class="reviews__date" datetime="2021-09-28">28 сентября 2021</time>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__header">
+                    <div class="reviews__rating">
+                        <img alt="" class="reviews__icon" src="img/icons/google.svg">
+                        <span class="reviews__score">5/5</span>
+                    </div>
+                </div>
+                <div class="reviews__body">
+                    <div class="reviews__text">
+                        Были в апреле, ловили воблу, всё очень понравилось, место, персонал, удобства, стояли в палатке, решили приехать сюда в конце сентября. Елена и Сергей из Нижегородской области, отдельное спасибо хозяйке Юле.
+                    </div>
+                </div>
+                <div class="reviews__author">
+                    <div class="reviews__photo">
+                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="img/reviews-photo.png"></picture>
+                    </div>
+                    <div class="reviews__profile">
+                        <div class="reviews__name">Андрей Баринов</div>
+                        <time class="reviews__date" datetime="2021-09-28">28 сентября 2021</time>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.reviews__inner -->
+        <div class="reviews__btn">
+            <button class="btn btn_sm" type="button">Больше отзывов</button>
+        </div>
+    </div><!-- /.container -->
+</section><!-- /.reviews -->
+
+
+        <!-- Map -->
+        <div class="section" id="address">
+    <div class="container">
+        <div class="map__wrapper">
+            <div class="map__menu">
+                <address>
+                    <div class="map__title">Наш адрес</div>
+                    <div class="map__address">Апарт-отель «SkyPlazaYalta» расположен по адресу г. Ялта, ул. Дражинского 48В</div>
+                </address>
+            </div>
+            <div class="map" id="map" style="width: 100%; height: 600px;"></div>
+        </div><!-- /.map__wrapper -->
+    </div><!-- /.container -->
+</div>
+
+
+
+        <!-- Contact Us -->
+        <div class="section contact" id="contacts">
+    <div class="container">
+        <div class="contact__wrapper">
+            <h4 class="contact__title section__title">Связаться с нами</h4>
+            <div class="contact__inner">
+                <a class="contact__item" href="#" target="_blank">
+                    <img alt="" class="contact__icon" src="img/icons/tel.svg">
+                    <span class="contact__name">По телефону</span>
+                </a>
+                <a class="contact__item" href="#" target="_blank">
+                    <img alt="" class="contact__icon" src="img/icons/mail.svg">
+                    <span class="contact__name">По почте</span>
+                </a>
+                <a class="contact__item" href="#" target="_blank">
+                    <img alt="" class="contact__icon" src="img/icons/wa-1.svg">
+                    <span class="contact__name">В WhatsApp</span>
+                </a>
+                <a class="contact__item" href="#" target="_blank">
+                    <img alt="" class="contact__icon" src="img/icons/tg.svg">
+                    <span class="contact__name">В Telegram</span>
+                </a>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.contact -->
+
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__logo">Sky<span>Plaza</span>Yalta</div>
+            <a class="footer__phone" href="tel:+79504777365">+7 (950) 477-73-65</a>
+        </div>
+        <nav class="footer__nav nav">
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a class="nav__link" href="#" data-scroll="about">О нас</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#" data-scroll="rooms">Апартаменты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#" data-scroll="address">Как добраться</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#" data-scroll="reviews">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#" data-scroll="contacts">Контакты</a>
+                </li>
+            </ul>
+            <a class="nav__link" href="#">Политика конфиденциальности</a>
+        </nav>
+    </div><!-- /.container -->
+</footer><!-- /.footer -->
+    <div class="modal" id="galleryPopup">
+    <div class="modal__window">
+        <div class="modal__header">
+            <button class="modal__close btn_icon">&times;</button>
+        </div>
+        <div class="modal__body">
+            <div thumbsSlider="" class="swiper swiper-gallery swiper-gallery_thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper swiper-gallery swiper-gallery_main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__overlay"></div>
+</div>
+    <script src="js/app.min.js"></script>
+</body>
+
+
+</html>

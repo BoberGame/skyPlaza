@@ -1,0 +1,64 @@
+.footer {
+  margin-top: auto;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(30);
+
+    line-height: 1.1;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: rem(5);
+    }
+
+    @media (max-width: $mobile-sm) {
+      margin-bottom: rem(15);
+    }
+  }
+
+  &__logo {
+    font-family: FuzzyBubbles;
+    font-size: rem(44);
+    font-weight: 400;
+    color: var(--blue);
+
+    span {
+      color: #43C453;
+    }
+
+    @media (max-width: $mobile-sm) {
+      font-size: rem(30);
+    }
+  }
+
+  &__phone {
+    font-size: rem(30);
+    font-weight: 600;
+    color: var(--blue);
+
+    @media (max-width: $mobile-sm) {
+      font-size: rem(24);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    padding: rem(30) 0;
+    gap: rem(15) rem(20);
+
+    justify-content: space-between;
+    border-top: 2px solid #CACACA;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $mobile-sm) {
+      padding: rem(15) 0;
+    }
+  }
+}

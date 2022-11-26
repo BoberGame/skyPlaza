@@ -1,0 +1,16 @@
+.section {
+  margin-top: rem(80);
+
+  @media (max-width: $mobile) {
+    margin-top: rem(60);
+  }
+  
+  &__header {
+    margin-bottom: rem(40);
+  }
+  &__title {
+    color: var(--black);
+    line-height: 1.1;
+    @include adaptiv-value(font-size, 44, 26, 0);
+  }
+}

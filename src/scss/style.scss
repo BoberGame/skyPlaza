@@ -1,0 +1,37 @@
+@import "vendor/reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "helpers";
+
+/* Swiper */
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/socials";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/buttons";
+@import "blocks/about";
+@import "blocks/section";
+@import "blocks/rooms";
+@import "blocks/features";
+@import "blocks/gallery";
+@import "blocks/blog";
+@import "blocks/reviews";
+@import "blocks/map";
+@import "blocks/contact";
+@import "blocks/reserve";
+@import "blocks/footer";
+@import "blocks/select";
+@import "blocks/menu-burger";
+@import "blocks/tabs";
+@import "blocks/play";
+@import "blocks/slider";
+@import "blocks/modal";

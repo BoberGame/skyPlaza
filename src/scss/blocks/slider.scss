@@ -1,0 +1,57 @@
+.swiper {
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: rem(44);
+  height: rem(44);
+
+  background: url('../img/icons/arrow.svg') center no-repeat;
+  background-color: var(--blue);
+  border-radius: 50%;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+  box-shadow: 0px 2px 7px rgba(47, 128, 237, 0.25);
+
+  &:after {
+    display: none;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: darken(#2F80ED, 7%);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: rem(36);
+    height: rem(36);
+    background-size: rem(18);
+  }
+
+  @media (max-width: $mobile-xs) {
+    width: rem(28);
+    height: rem(28);
+
+    background-size: rem(14);
+  }
+}
+
+
+.swiper-button-prev {
+  left: rem(15);
+  transform: rotate(180deg);
+  
+  @media (min-width: $laptop-lg) {
+    // left: rem(-65);
+  }
+}
+
+.swiper-button-next {
+  right: rem(15);
+  
+
+  @media (min-width: $laptop-lg) {
+    // right: rem(-65);
+  }
+}

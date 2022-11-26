@@ -1,0 +1,87 @@
+.header {
+  padding: rem(20) 0;
+
+  @media (max-width: $mobile) {
+    margin-bottom: rem(20);
+
+    background: #FFFFFF;
+    box-shadow: 0px 12px 53px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 9px 9px;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    color: var(--blue);
+    font-size: rem(15);
+    line-height: 1.2;
+    font-weight: 600;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+
+  &__title {
+    margin-bottom: rem(10);
+
+    line-height: 1.1;
+    color: #5A5A5A;
+    @include adaptiv-value(font-size, 59, 35, 0);
+
+    &_intro {
+      color: var(--white);
+    }
+  }
+
+  &__subtitle {
+    color: #898989;
+    line-height: 1.1;
+    @include adaptiv-value(font-size, 33, 19, 0);
+
+    &_intro {
+      color: #CFCFCF;
+      font-weight: 400;
+    }
+  }
+
+  &__address {
+    color: #939393;
+    font-size: rem(16);
+    line-height: 1.2;
+
+    &_intro {
+      font-weight: 400;
+      color: #D9D9D9;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(12);
+    }
+  }
+
+  &__socials {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: flex;
+    }
+
+    &_burger {
+      margin-top: auto;
+    }
+  }
+}

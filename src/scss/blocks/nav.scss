@@ -1,0 +1,33 @@
+.nav {
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @include adaptiv-value(column-gap, 40, 15, 0);
+    row-gap: rem(5);
+
+    @media (max-width: $mobile) {
+      &:not(.footer &) {
+        margin-top: rem(80);
+        flex-direction: column;
+        row-gap: rem(50);
+        
+        .nav__link {
+          font-size: rem(20);
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: rem(15);
+    line-height: 1.2;
+    color: #5A5A5A;
+
+    .footer & {
+      font-size: rem(14);
+      color: #808080;
+    }
+  }
+}
