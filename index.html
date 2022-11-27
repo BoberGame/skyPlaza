@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
     
     <!-- Yandex Map API -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=2ee2f057-e1a3-4477-9a6f-9614f69411c7&lang=ru_RU">
     </script>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
-    <link rel="manifest" href="files/favicon/site.webmanifest">
-    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="dist/files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="dist/files/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -24,69 +24,68 @@
 
 <body>
     <header class="header">
-    <div class="container">
-        <div class="header__wrapper">
-            <div class="menu-burger">
-                <span></span>
-            </div>
-            <div class="menu-body">
-                <div class="header__logo">
-                    <div class="header__subtitle">Апарт-отель</div>
-                    <h2 class="header__title">«SkyPlazaYalta»</h2>
-                    <address>
-                        <div class="header__address">г. Ялта, ул. Дражинского 48В</div>
-                    </address>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="menu-burger">
+                    <span></span>
                 </div>
-                <div class="header__socials header__socials_burger socials">
+                <div class="menu-body">
+                    <div class="header__logo">
+                        <div class="header__subtitle">Апарт-отель</div>
+                        <h2 class="header__title">«SkyPlazaYalta»</h2>
+                        <address>
+                            <div class="header__address">г. Ялта, ул. Дражинского 48В</div>
+                        </address>
+                    </div>
+                    <div class="header__socials header__socials_burger socials">
+                        <a class="socials__item" href="#" target="_blank">
+                            <img alt="" class="socials__icon" src="dist/img/icons/wa.svg">
+                        </a>
+                        <a class="socials__item" href="#" target="_blank">
+                            <img alt="" class="socials__icon" src="dist/img/icons/tg.svg">
+                        </a>
+                        <a class="socials__item" href="#" target="_blank">
+                            <img alt="" class="socials__icon" src="dist/img/icons/tel.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu" data-da=".menu-body,768,1">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="about">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="rooms">Апартаменты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="address">Как добраться</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="reviews">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__socials socials">
                     <a class="socials__item" href="#" target="_blank">
-                        <img alt="" class="socials__icon" src="img/icons/wa.svg">
+                        <img alt="" class="socials__icon" src="dist/img/icons/wa.svg">
                     </a>
                     <a class="socials__item" href="#" target="_blank">
-                        <img alt="" class="socials__icon" src="img/icons/tg.svg">
+                        <img alt="" class="socials__icon" src="dist/img/icons/tg.svg">
                     </a>
                     <a class="socials__item" href="#" target="_blank">
-                        <img alt="" class="socials__icon" src="img/icons/tel.svg">
+                        <img alt="" class="socials__icon" src="dist/img/icons/tel.svg">
                     </a>
                 </div>
-            </div>
 
-            <nav class="nav">
-                <ul class="nav__menu" data-da=".menu-body,768,1">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#" data-scroll="about">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#" data-scroll="rooms">Апартаменты</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#" data-scroll="address">Как добраться</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#" data-scroll="reviews">Отзывы</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#" data-scroll="contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__socials socials">
-                <a class="socials__item" href="#" target="_blank">
-                    <img alt="" class="socials__icon" src="img/icons/wa.svg">
-                </a>
-                <a class="socials__item" href="#" target="_blank">
-                    <img alt="" class="socials__icon" src="img/icons/tg.svg">
-                </a>
-                <a class="socials__item" href="#" target="_blank">
-                    <img alt="" class="socials__icon" src="img/icons/tel.svg">
-                </a>
+                <a class="header__phone" href="tel:+79504777365">+7 (950) 477-73-65</a>
             </div>
-
-            <a class="header__phone" href="tel:+79504777365">+7 (950) 477-73-65</a>
-        </div>
-    </div><!-- /.header__container -->
-</header><!-- /.header -->
+        </div><!-- /.header__container -->
+    </header><!-- /.header -->
     <main class="page">
-
 
         <!-- Intro -->
         <section class="intro">
@@ -103,9 +102,9 @@
                                     </address>
                                 </div>
                                 <div class="intro__img">
-                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" src="img/1.jpg"></picture>
+                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" src="dist/img/1.jpg"></picture>
                                 </div>
-                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                                <a class="btn intro__btn" href="dist/reserve.html">Забронировать</a>
                             </div>
                             <div class="swiper-slide intro__slide">
                                 <div class="intro__info">
@@ -116,9 +115,9 @@
                                     </address>
                                 </div>
                                 <div class="intro__img">
-                                    <picture><source srcset="img/2.webp" type="image/webp"><img alt="" src="img/2.jpg"></picture>
+                                    <picture><source srcset="img/2.webp" type="image/webp"><img alt="" src="dist/img/2.jpg"></picture>
                                 </div>
-                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                                <a class="btn intro__btn" href="dist/reserve.html">Забронировать</a>
                             </div>
                             <div class="swiper-slide intro__slide">
                                 <div class="intro__info">
@@ -129,9 +128,9 @@
                                     </address>
                                 </div>
                                 <div class="intro__img">
-                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" class="" src="img/1.jpg"></picture>
+                                    <picture><source srcset="img/1.webp" type="image/webp"><img alt="" class="" src="dist/img/1.jpg"></picture>
                                 </div>
-                                <a class="btn intro__btn" href="reserve.html">Забронировать</a>
+                                <a class="btn intro__btn" href="dist/reserve.html">Забронировать</a>
                             </div>
                         </div>
                     </div><!-- /.swiper -->
@@ -154,11 +153,11 @@
                                 <p>Самые разнообразные услуги от фотосессии до круиза по морю на комфортабельной яхте, разнообразят и украсят ваш отпуск.</p>
                             </div>
                         </div>
-                        <picture><source srcset="img/about/1.webp" type="image/webp"><img alt="" class="about__img about__img_lg img" src="img/about/1.jpg"></picture>
+                        <picture><source srcset="img/about/1.webp" type="image/webp"><img alt="" class="about__img about__img_lg img" src="dist/img/about/1.jpg"></picture>
                     </div>
                     <div class="about__row">
-                        <picture><source srcset="img/about/2.webp" type="image/webp"><img alt="" class="about__img img" src="img/about/2.jpg"></picture>
-                        <picture><source srcset="img/about/3.webp" type="image/webp"><img alt="" class="about__img img" src="img/about/3.jpg"></picture>
+                        <picture><source srcset="img/about/2.webp" type="image/webp"><img alt="" class="about__img img" src="dist/img/about/2.jpg"></picture>
+                        <picture><source srcset="img/about/3.webp" type="image/webp"><img alt="" class="about__img img" src="dist/img/about/3.jpg"></picture>
                     </div>
 
                 </div>
@@ -179,10 +178,10 @@
                             <div class="swiper-slide">
                                 <div class="rooms__item">
                                     <div class="rooms__preview">
-                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="dist/img/rooms/1.jpg"></picture>
                                     </div>
                                     <div class="rooms__info">
-                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__title"><a href="dist/reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
                                         <div class="rooms__footer">
                                             <div class="rooms__price"><b>от 3200 &#8381;</b> <span>cутки</span></div>
                                         </div>
@@ -192,10 +191,10 @@
                             <div class="swiper-slide">
                                 <div class="rooms__item">
                                     <div class="rooms__preview">
-                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="dist/img/rooms/1.jpg"></picture>
                                     </div>
                                     <div class="rooms__info">
-                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__title"><a href="dist/reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
                                         <div class="rooms__footer">
                                             <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
                                         </div>
@@ -205,10 +204,10 @@
                             <div class="swiper-slide">
                                 <div class="rooms__item">
                                     <div class="rooms__preview">
-                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="dist/img/rooms/1.jpg"></picture>
                                     </div>
                                     <div class="rooms__info">
-                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__title"><a href="dist/reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
                                         <div class="rooms__footer">
                                             <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
                                         </div>
@@ -218,10 +217,10 @@
                             <div class="swiper-slide">
                                 <div class="rooms__item">
                                     <div class="rooms__preview">
-                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="dist/img/rooms/1.jpg"></picture>
                                     </div>
                                     <div class="rooms__info">
-                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__title"><a href="dist/reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
                                         <div class="rooms__footer">
                                             <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
                                         </div>
@@ -231,10 +230,10 @@
                             <div class="swiper-slide">
                                 <div class="rooms__item">
                                     <div class="rooms__preview">
-                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="img/rooms/1.jpg"></picture>
+                                        <picture><source srcset="img/rooms/1.webp" type="image/webp"><img alt="" class="rooms__img img" src="dist/img/rooms/1.jpg"></picture>
                                     </div>
                                     <div class="rooms__info">
-                                        <div class="rooms__title"><a href="reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
+                                        <div class="rooms__title"><a href="dist/reserve.html">2-комнатные апартаменты с видом на море и во двор, 3 этаж</a></div>
                                         <div class="rooms__footer">
                                             <div class="rooms__price"><b>от 3200&#8381;</b> <span>cутки</span></div>
                                         </div>
@@ -258,37 +257,37 @@
         <div class="features__wrapper">
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/1.jpg"></picture>
+                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/1.jpg"></picture>
                 </div>
                 <div class="features__text">Трансфер</div>
             </div>
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/2.jpg"></picture>
+                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/2.jpg"></picture>
                 </div>
                 <div class="features__text">Скоростной интернет</div>
             </div>
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/3.jpg"></picture>
+                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/3.jpg"></picture>
                 </div>
                 <div class="features__text">Домашняя кухня</div>
             </div>
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/1.jpg"></picture>
+                    <picture><source srcset="img/features/1.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/1.jpg"></picture>
                 </div>
                 <div class="features__text">Бесплатная парковка</div>
             </div>
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/2.jpg"></picture>
+                    <picture><source srcset="img/features/2.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/2.jpg"></picture>
                 </div>
                 <div class="features__text">Скоростной интернет</div>
             </div>
             <div class="features__item">
                 <div class="features__left">
-                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="img/features/3.jpg"></picture>
+                    <picture><source srcset="img/features/3.webp" type="image/webp"><img alt="" class="features__img img" src="dist/img/features/3.jpg"></picture>
                 </div>
                 <div class="features__text">Домашняя кухня</div>
             </div>
@@ -307,18 +306,18 @@
                 <div class="gallery__wrapper">
                     <div class="gallery__row">
                         <div class="gallery__item">
-                            <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/1.jpg"></picture>
+                            <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="gallery__img img" src="dist/img/gallery/1.jpg"></picture>
                         </div>
                         <div class="gallery__item">
-                            <picture><source srcset="img/gallery/2.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/2.jpg"></picture>
+                            <picture><source srcset="img/gallery/2.webp" type="image/webp"><img alt="" class="gallery__img img" src="dist/img/gallery/2.jpg"></picture>
                         </div>
                     </div>
                     <div class="gallery__row">
                         <div class="gallery__item">
-                            <picture><source srcset="img/gallery/3.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/3.jpg"></picture>
+                            <picture><source srcset="img/gallery/3.webp" type="image/webp"><img alt="" class="gallery__img img" src="dist/img/gallery/3.jpg"></picture>
                         </div>
                         <div class="gallery__item">
-                            <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="gallery__img img" src="img/gallery/4.jpg"></picture>
+                            <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="gallery__img img" src="dist/img/gallery/4.jpg"></picture>
                         </div>
                     </div>
                     <div class="gallery__footer">
@@ -342,7 +341,7 @@
                         <source src="files/presentation/video.mp4" type="video/mp4">
                     </video>
                     <button class="play__btn" type="button" data-play>
-                        <img alt="" class="play__icon" src="img/icons/play.svg">
+                        <img alt="" class="play__icon" src="dist/img/icons/play.svg">
                     </button>
                     <span class="play__blur"></span>
                 </div>
@@ -366,7 +365,7 @@
                             </div>
                         </div>
                         <div class="blog__preview">
-                            <picture><source srcset="img/4.webp" type="image/webp"><img alt="" class="img" src="img/4.jpg"></picture>
+                            <picture><source srcset="img/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/4.jpg"></picture>
                         </div>
                     </div>
                 </div>
@@ -385,7 +384,7 @@
             <div class="reviews__item">
                 <div class="reviews__header">
                     <div class="reviews__rating">
-                        <img alt="" class="reviews__icon" src="img/icons/google.svg">
+                        <img alt="" class="reviews__icon" src="dist/img/icons/google.svg">
                         <span class="reviews__score">5/5</span>
                     </div>
                 </div>
@@ -404,7 +403,7 @@
             <div class="reviews__item">
                 <div class="reviews__header">
                     <div class="reviews__rating">
-                        <img alt="" class="reviews__icon" src="img/icons/yandex.svg">
+                        <img alt="" class="reviews__icon" src="dist/img/icons/yandex.svg">
                         <span class="reviews__score">4/5</span>
                     </div>
                 </div>
@@ -415,7 +414,7 @@
                 </div>
                 <div class="reviews__author">
                     <div class="reviews__photo">
-                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="img/reviews-photo.png"></picture>
+                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="dist/img/reviews-photo.png"></picture>
                     </div>
                     <div class="reviews__profile">
                         <div class="reviews__name">Никита Толмачев</div>
@@ -426,7 +425,7 @@
             <div class="reviews__item">
                 <div class="reviews__header">
                     <div class="reviews__rating">
-                        <img alt="" class="reviews__icon" src="img/icons/google.svg">
+                        <img alt="" class="reviews__icon" src="dist/img/icons/google.svg">
                         <span class="reviews__score">5/5</span>
                     </div>
                 </div>
@@ -437,7 +436,7 @@
                 </div>
                 <div class="reviews__author">
                     <div class="reviews__photo">
-                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="img/reviews-photo.png"></picture>
+                        <picture><source srcset="img/reviews-photo.webp" type="image/webp"><img alt="" class="img" src="dist/img/reviews-photo.png"></picture>
                     </div>
                     <div class="reviews__profile">
                         <div class="reviews__name">Андрей Баринов</div>
@@ -477,19 +476,19 @@
             <h4 class="contact__title section__title">Связаться с нами</h4>
             <div class="contact__inner">
                 <a class="contact__item" href="#" target="_blank">
-                    <img alt="" class="contact__icon" src="img/icons/tel.svg">
+                    <img alt="" class="contact__icon" src="dist/img/icons/tel.svg">
                     <span class="contact__name">По телефону</span>
                 </a>
                 <a class="contact__item" href="#" target="_blank">
-                    <img alt="" class="contact__icon" src="img/icons/mail.svg">
+                    <img alt="" class="contact__icon" src="dist/img/icons/mail.svg">
                     <span class="contact__name">По почте</span>
                 </a>
                 <a class="contact__item" href="#" target="_blank">
-                    <img alt="" class="contact__icon" src="img/icons/wa-1.svg">
+                    <img alt="" class="contact__icon" src="dist/img/icons/wa-1.svg">
                     <span class="contact__name">В WhatsApp</span>
                 </a>
                 <a class="contact__item" href="#" target="_blank">
-                    <img alt="" class="contact__icon" src="img/icons/tg.svg">
+                    <img alt="" class="contact__icon" src="dist/img/icons/tg.svg">
                     <span class="contact__name">В Telegram</span>
                 </a>
             </div>
@@ -526,7 +525,7 @@
         </nav>
     </div><!-- /.container -->
 </footer><!-- /.footer -->
-    <div class="modal" id="galleryPopup">
+<div class="modal" id="galleryPopup">
     <div class="modal__window">
         <div class="modal__header">
             <button class="modal__close btn_icon">&times;</button>
@@ -535,28 +534,28 @@
             <div thumbsSlider="" class="swiper swiper-gallery swiper-gallery_thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -565,28 +564,28 @@
             <div class="swiper swiper-gallery swiper-gallery_main">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="img/gallery/1.jpg"></picture>
+                        <picture><source srcset="img/gallery/1.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/1.jpg"></picture>
                     </div>
                     <div class="swiper-slide">
-                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="img/gallery/4.jpg"></picture>
+                        <picture><source srcset="img/gallery/4.webp" type="image/webp"><img alt="" class="img" src="dist/img/gallery/4.jpg"></picture>
                     </div>
                 </div>
             </div>
@@ -594,7 +593,7 @@
     </div>
     <div class="modal__overlay"></div>
 </div>
-    <script src="js/app.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
 </body>
 
 
