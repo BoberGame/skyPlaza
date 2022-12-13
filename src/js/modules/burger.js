@@ -1,4 +1,4 @@
-const burger = () => {
+function burger() {
   const burgerBtn = document.querySelector('.menu-burger');
   if (burgerBtn) {
     const burgerMenu = document.querySelector('.menu-body');
@@ -8,6 +8,6 @@ const burger = () => {
       burgerMenu.classList.toggle('active');
     });
   }
-};
+}
 
 export default burger;

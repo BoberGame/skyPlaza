@@ -1,25 +1,40 @@
-function scrollTo() {
-  const scrollItems = document.querySelectorAll('[data-scroll]');
+function scrollTo(mediaWidth, mediaType = 2) {
+  const scrollButtons = document.querySelectorAll('[data-scroll]');
 
-  if (scrollItems.length > 0) {
-    document.addEventListener('DOMContentLoaded', () => {
-      scrollItems.forEach((item) => {
-        const scrollBtn = item;
-        const scrollId = item.dataset.scroll;
-        const scrollElem = document.getElementById(scrollId);
+  const getScrollOffset = (item) => {
+    const scrollId = item.dataset.scroll;
+    const scrollElem = document.getElementById(scrollId);
+    if (scrollElem) {
+      const scrollOffset = scrollElem.offsetTop;
+      return scrollOffset;
+    }
+  };
 
-        if (scrollElem) {
-          const scrollOffsetTop = scrollElem.offsetTop;
-          const windowScroll = (event) => {
-            event.preventDefault();
-            window.scrollTo({
-              top: scrollOffsetTop - 150,
-              behavior: 'smooth',
-            });
-          };
-          scrollBtn.addEventListener('click', windowScroll);
-        }
-      });
+  const windowScroll = (event, scrollOffsetTop) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: scrollOffsetTop - 150,
+      behavior: 'smooth',
+    });
+  };
+
+  const getMediaQuery = (width, type) => {
+    const typeName = (type === 1) ? 'max' : 'min';
+    return window.matchMedia(`(${typeName}-width: ${width}px)`);
+  };
+
+  const mediaQuery = mediaWidth ? getMediaQuery(mediaWidth, mediaType) : getMediaQuery(0, mediaType);
+
+  console.log(mediaQuery);
+
+  if (scrollButtons.length > 0) {
+    scrollButtons.forEach((btn) => {
+      const scrollOffsetTop = getScrollOffset(btn);
+      if (mediaQuery.matches) {
+        btn.addEventListener('click', (event) => {
+          windowScroll(event, scrollOffsetTop);
+        });
+      }
     });
   }
 }

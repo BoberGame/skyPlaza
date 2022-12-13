@@ -1,5 +1,4 @@
-import Swiper, { Navigation, Pagination, Scrollbar, Keyboard, A11y, EffectFade, Thumbs, Autoplay } from 'swiper';
-
+import Swiper, { Navigation, Keyboard, A11y, EffectFade, Thumbs, Autoplay } from 'swiper';
 
 const sliderInit = () => {
   const swiperIntro = new Swiper('.swiper-intro', {
@@ -108,8 +107,6 @@ const sliderInit = () => {
       prevEl: ".swiper-button-prev",
     },
   });
-
-
 };
 
 export default sliderInit;
